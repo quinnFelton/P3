@@ -85,10 +85,10 @@ def defend_threatened_planet(state):
 
 def find_best_neutral_move(state):
     """
-    Find the best valid source/neutral-target combination.
+    Find the best valid source/neutral-target combination
 
     Returns:
-        (source_planet, target_planet, ships_to_send), or None.
+        (source_planet, target_planet, ships_to_send) or None
     """
     best_move = None
     best_score = None
@@ -146,8 +146,10 @@ def expand_to_best_neutral(state):
 def find_best_enemy_move(state):
     """
     Find an enemy planet that one source planet can capture
-
     calculates enemy growth during travel time, checks for incoming enemy fleets, and returns the best source/target combination
+
+    Returns:
+        (source_planet, target_planet, ships_to_send) or None
     """
     best_move = None
     best_score = None
