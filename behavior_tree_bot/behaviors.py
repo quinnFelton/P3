@@ -108,8 +108,7 @@ def find_best_neutral_move(state):
 
             distance = state.distance(source.ID, target.ID)
 
-            # Higher growth is good.
-            # Large defending populations and long travel are bad.
+            # Higher growth is good, large defending populations and long travel are bad
             score = (
                 int(target.growth_rate) * 8
                 - required
@@ -173,7 +172,7 @@ def find_best_enemy_move(state):
             if source_available < required:
                 continue
 
-            # Capturing an enemy planet is more valuable than a neutral, so weight more heavily
+            # Capturing an enemy planet with high growthrate is more valuable compared to neutral planets, so weight more heavily
             score = (
                 int(target.growth_rate) * 10
                 - required
