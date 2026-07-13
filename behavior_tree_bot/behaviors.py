@@ -1,41 +1,214 @@
 import sys
 sys.path.insert(0, '../')
+
 from planet_wars import issue_order
 
 
-def attack_weakest_enemy_planet(state):
-    # (1) If we currently have a fleet in flight, abort plan.
-    if len(state.my_fleets()) >= 1:
+ 
+# Utility functions
+
+
+def reserve_for(planet):
+    """
+    Ships that should remain behind at each planet
+    """
+    return max(5, int(planet.growth_rate) * 2)
+
+
+def available_ships(planet):
+    """Ships that can safely be used for an order"""
+    return max(0, int(planet.num_ships) - reserve_for(planet))
+
+
+def friendly_fleet_heading_to(state, planet_id):
+    """Return True when we already have a fleet going to this target"""
+    return any(
+        fleet.destination_planet == planet_id
+        for fleet in state.my_fleets()
+    )
+
+def enemy_fleet_heading_to(state, planet_id):
+    """Return size of fleet the enemy already has going to this target, 0 if none"""
+    total_enemy_fleet_size = 0
+    for fleet in state.enemy_fleets():
+        if(fleet.destination_planet == planet_id):
+            total_enemy_fleet_size += fleet.num_ships
+    return total_enemy_fleet_size
+
+
+#Defensive checks
+
+def find_threatened_planet(state):
+    """
+    Find a planet that is threatened by an incoming enemy fleet
+
+    Returns:
+        (planet, ships_needed_to_defend), or None
+    """
+    min_ships_needed = 100000
+    id = None
+    for planet in state.my_planets():
+        if enemy_fleet_heading_to(state, planet.ID) > planet.num_ships:
+            ships_needed = enemy_fleet_heading_to(state, planet.ID)-(planet.num_ships+friendly_fleet_heading_to(state, planet.ID))
+            if ships_needed < min_ships_needed:
+                min_ships_needed = ships_needed
+                id = planet.ID
+    if id is not None:
+        return (state.get_planet(id), min_ships_needed)
+    return None
+
+def defend_threatened_planet(state):
+    """
+    Defend planet that is threatened by an incoming enemy fleet if possible, if no source planet has enough ships to defend return False
+    """
+    threatened_planet = find_threatened_planet(state)
+
+    if threatened_planet is None:
+        return False
+    
+    planet, ships_needed = threatened_planet
+    close_planets = sorted(state.my_planets(), key=lambda p: state.distance(p.ID, planet.ID))
+    for source in close_planets:
+        if source.ID == planet.ID:
+            continue
+        if available_ships(source) >= ships_needed:
+            return issue_order(
+                state,
+                source.ID,
+                planet.ID,
+                int(ships_needed)+1
+            )
+    return False
+ 
+# Neutral expansion
+ 
+
+def find_best_neutral_move(state):
+    """
+    Find the best valid source/neutral-target combination.
+
+    Returns:
+        (source_planet, target_planet, ships_to_send), or None.
+    """
+    best_move = None
+    best_score = None
+
+    for source in state.my_planets():
+        source_available = available_ships(source)
+
+        for target in state.neutral_planets():
+            # Prevent repeatedly attacking the same neutral planet.
+            if friendly_fleet_heading_to(state, target.ID):
+                continue
+
+            required = int(target.num_ships) + 1
+
+            if source_available < required:
+                continue
+
+            distance = state.distance(source.ID, target.ID)
+
+            # Higher growth is good.
+            # Large defending populations and long travel are bad.
+            score = (
+                int(target.growth_rate) * 8
+                - required
+                - distance
+            )
+
+            if best_score is None or score > best_score:
+                best_score = score
+                best_move = source, target, required
+
+    return best_move
+
+
+def expand_to_best_neutral(state):
+    move = find_best_neutral_move(state)
+
+    if move is None:
         return False
 
-    # (2) Find my strongest planet.
-    strongest_planet = max(state.my_planets(), key=lambda t: t.num_ships, default=None)
+    source, target, ships = move
 
-    # (3) Find the weakest enemy planet.
-    weakest_planet = min(state.enemy_planets(), key=lambda t: t.num_ships, default=None)
+    return issue_order(
+        state,
+        source.ID,
+        target.ID,
+        int(ships)
+    )
 
-    if not strongest_planet or not weakest_planet:
-        # No legal source or destination
+
+ 
+# Enemy attacks
+ 
+
+def find_best_enemy_move(state):
+    """
+    Find an enemy planet that one source planet can capture
+
+    calculates enemy growth during travel time, checks for incoming enemy fleets, and returns the best source/target combination
+    """
+    best_move = None
+    best_score = None
+
+    for source in state.my_planets():
+        source_available = available_ships(source)
+
+        for target in state.enemy_planets():
+            if friendly_fleet_heading_to(state, target.ID):
+                continue
+
+            distance = state.distance(source.ID, target.ID)
+
+            projected_defenders = (
+                int(target.num_ships)
+                + distance * int(target.growth_rate)+int(enemy_fleet_heading_to(state, target.ID))
+            )
+
+            required = projected_defenders + 1
+
+            if source_available < required:
+                continue
+
+            # Capturing an enemy planet is more valuable than a neutral, so weight more heavily
+            score = (
+                int(target.growth_rate) * 10
+                - required
+                - distance
+            )
+
+            if best_score is None or score > best_score:
+                best_score = score
+                best_move = source, target, required
+
+    return best_move
+
+
+def attack_best_enemy(state):
+    move = find_best_enemy_move(state)
+
+    if move is None:
         return False
-    else:
-        # (4) Send half the ships from my strongest planet to the weakest enemy planet.
-        return issue_order(state, strongest_planet.ID, weakest_planet.ID, strongest_planet.num_ships / 2)
+
+    source, target, ships = move
+
+    return issue_order(
+        state,
+        source.ID,
+        target.ID,
+        int(ships)
+    )
 
 
-def spread_to_weakest_neutral_planet(state):
-    # (1) If we currently have a fleet in flight, just do nothing.
-    if len(state.my_fleets()) >= 1:
-        return False
+ 
+# Fallback
+ 
 
-    # (2) Find my strongest planet.
-    strongest_planet = max(state.my_planets(), key=lambda p: p.num_ships, default=None)
+def pass_turn(state):
+    """
+    do nothing
 
-    # (3) Find the weakest neutral planet.
-    weakest_planet = min(state.neutral_planets(), key=lambda p: p.num_ships, default=None)
-
-    if not strongest_planet or not weakest_planet:
-        # No legal source or destination
-        return False
-    else:
-        # (4) Send half the ships from my strongest planet to the weakest enemy planet.
-        return issue_order(state, strongest_planet.ID, weakest_planet.ID, strongest_planet.num_ships / 2)
+    finish_turn() is called by bt_bot.py after the behavior tree finishes
+    """
+    return True

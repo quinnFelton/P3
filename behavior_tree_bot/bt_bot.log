@@ -1,56 +1,1340 @@
 INFO:root:
 Selector: High Level Ordering of Strategies
-| Sequence: Offensive Strategy
-| | Check: have_largest_fleet
-| | Action: attack_weakest_enemy_planet
-| Sequence: Spread Strategy
-| | Check: if_neutral_planet_available
-| | Action: spread_to_weakest_neutral_planet
-| Action: attack_weakest_enemy_planet
+| Sequence: Profitable Expansion
+| | Check: profitable_neutral_exists
+| | Action: expand_to_best_neutral
+| Sequence: Safe Enemy Attack
+| | Check: safe_enemy_attack_exists
+| | Action: attack_best_enemy
+| Action: pass_turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Order:1 3 50.0
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Success
-DEBUG:root:Result: Sequence: Spread Strategy -> Success
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 12 13
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: attack_weakest_enemy_planet
-DEBUG:root:Result: Action: attack_weakest_enemy_planet -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 11 13
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Order:1 4 30.0
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Success
-DEBUG:root:Result: Sequence: Spread Strategy -> Success
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 18 5
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 17 5
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 0 38
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 6 23
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 5 23
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:1 9 33
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 19 56
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:12 17 43
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:11 20 56
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:12 15 60
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:0 21 59
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 16 60
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:11 22 59
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:1 6 16
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:0 17 16
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:12 9 16
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:18 13 60
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:11 5 14
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:1 19 49
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:12 14 60
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:15 20 16
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:18 21 17
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:11 2 69
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:22 17 12
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 4 82
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:22 9 12
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:12 3 82
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:16 5 9
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:0 7 84
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:11 18 43
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:22 17 12
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:22 20 9
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:2 8 84
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:0 4 20
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:15 10 85
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:8 5 7
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
