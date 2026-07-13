@@ -46,15 +46,15 @@ def find_threatened_planet(state):
         (planet, ships_needed_to_defend), or None
     """
     min_ships_needed = 100000
-    id = None
+    planet = None
     for planet in state.my_planets():
         if enemy_fleet_heading_to(state, planet.ID) > planet.num_ships:
             ships_needed = enemy_fleet_heading_to(state, planet.ID)-(planet.num_ships+friendly_fleet_heading_to(state, planet.ID))
             if ships_needed < min_ships_needed:
                 min_ships_needed = ships_needed
-                id = planet.ID
-    if id is not None:
-        return (state.get_planet(id), min_ships_needed)
+                planet = planet
+    if planet is not None:
+        return (planet, min_ships_needed)
     return None
 
 def defend_threatened_planet(state):
