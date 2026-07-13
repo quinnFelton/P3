@@ -142,7 +142,7 @@ def find_best_neutral_move(state):
 
             if best_score is None or score > best_score:
                 best_score = score
-                best_move = source, target, required
+                best_move = source, target, required, best_score
 
     return best_move
 
@@ -153,7 +153,7 @@ def expand_to_best_neutral(state):
     if move is None:
         return False
 
-    source, target, ships = move
+    source, target, ships, score = move
 
     return issue_order(
         state,
@@ -206,7 +206,7 @@ def find_best_enemy_move(state):
 
             if best_score is None or score > best_score:
                 best_score = score
-                best_move = source, target, required
+                best_move = source, target, required, best_score
 
     return best_move
 
@@ -217,7 +217,7 @@ def attack_best_enemy(state):
     if move is None:
         return False
 
-    source, target, ships = move
+    source, target, ships, score = move
 
     return issue_order(
         state,

@@ -35,12 +35,14 @@ def setup_behavior_tree():
     expansion = Sequence(name='Profitable Expansion')
     expansion.child_nodes = [
         Check(profitable_neutral_exists),
+        Check(better_to_expand),
         Action(expand_to_best_neutral),
     ]
 
     safe_attack = Sequence(name='Safe Enemy Attack')
     safe_attack.child_nodes = [
         Check(safe_enemy_attack_exists),
+        Check(better_to_attack),
         Action(attack_best_enemy),
     ]
 
