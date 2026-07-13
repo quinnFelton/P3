@@ -7,7 +7,6 @@ from planet_wars import issue_order
  
 # Utility functions
 
-
 def reserve_for(planet):
     """
     Ships that should remain behind at each planet
@@ -27,6 +26,10 @@ def friendly_fleet_heading_to(state, planet_id):
         for fleet in state.my_fleets()
     )
 
+def sum_friendly_fleet_heading_to(state, planet_id):
+    """Return total of friendly fleet heading to target"""
+    return sum(fleet.num_ships for fleet in state.my_fleets() if fleet.destination_planet == planet_id)
+
 def enemy_fleet_heading_to(state, planet_id):
     """Return size of fleet the enemy already has going to this target, 0 if none"""
     total_enemy_fleet_size = 0
@@ -35,26 +38,37 @@ def enemy_fleet_heading_to(state, planet_id):
             total_enemy_fleet_size += fleet.num_ships
     return total_enemy_fleet_size
 
+def time_for_enemy_to_capture(state, planet_id):
+    """Return arrival time of last fleet sent to target"""
+    incoming_enemy_times = [
+        fleet.turns_remaining 
+        for fleet in state.enemy_fleets() 
+        if fleet.destination_planet == planet_id
+    ]
+    if not incoming_enemy_times:
+        return float('inf')
+    return min(incoming_enemy_times)
+
 
 #Defensive checks
 
 def find_threatened_planet(state):
     """
-    Find a planet that is threatened by an incoming enemy fleet
+    Find biggest planet that is threatened by an incoming enemy fleet
 
     Returns:
         (planet, ships_needed_to_defend), or None
     """
-    min_ships_needed = 100000
-    planet = None
+    max_ships_needed = 0
+    target_planet = None
     for planet in state.my_planets():
         if enemy_fleet_heading_to(state, planet.ID) > planet.num_ships:
-            ships_needed = enemy_fleet_heading_to(state, planet.ID)-(planet.num_ships+friendly_fleet_heading_to(state, planet.ID))
-            if ships_needed < min_ships_needed:
-                min_ships_needed = ships_needed
-                planet = planet
-    if planet is not None:
-        return (planet, min_ships_needed)
+            ships_needed = enemy_fleet_heading_to(state, planet.ID)-(planet.num_ships+sum_friendly_fleet_heading_to(state, planet.ID))
+            if ships_needed > max_ships_needed:
+                max_ships_needed = ships_needed
+                target_planet = planet
+    if target_planet is not None:
+        return (target_planet, max_ships_needed)
     return None
 
 def defend_threatened_planet(state):
@@ -68,16 +82,27 @@ def defend_threatened_planet(state):
     
     planet, ships_needed = threatened_planet
     close_planets = sorted(state.my_planets(), key=lambda p: state.distance(p.ID, planet.ID))
+    available_planets = []
+    available_ships_to_send = 0
+    # get closest planets and see if they are able to donate, summing the total number of donate-able ships
     for source in close_planets:
         if source.ID == planet.ID:
             continue
-        if available_ships(source) >= ships_needed:
-            return issue_order(
-                state,
-                source.ID,
-                planet.ID,
-                int(ships_needed)+1
-            )
+        # big planets should defend small planets, not other way around
+        # don't add planet if too far away to make it in time to save threatened planet
+        if source.num_ships > planet.num_ships and state.distance(source.ID, planet.ID) < time_for_enemy_to_capture(state, planet.ID):
+            available_planets.append(source)
+            available_ships_to_send += available_ships(source)
+    # if there are enough ships, send ships in order from planets with most ships to least ships
+    if available_ships_to_send >= ships_needed:
+        ships_remaining = int(ships_needed)
+        available_planets.sort(key=lambda p: p.num_ships, reverse=True)
+        for source in available_planets:
+            ships_sent = min(ships_remaining, int(available_ships(source)))
+            ships_remaining -= ships_sent
+            issue_order(state, source.ID, planet.ID, ships_sent)
+            if ships_remaining <= 0:
+                return True
     return False
  
 # Neutral expansion

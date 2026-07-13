@@ -45,9 +45,9 @@ def setup_behavior_tree():
     ]
 
     root.child_nodes = [
-        #defend,
-        safe_attack,
+        defend,
         expansion,
+        safe_attack,
         Action(pass_turn),
     ]
 
