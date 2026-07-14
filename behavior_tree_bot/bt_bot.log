@@ -1,1958 +1,1492 @@
 INFO:root:
 Selector: High Level Ordering of Strategies
-| Sequence: Defend Threatened Planet
-| | Check: threatened_planet_exists
-| | Action: defend_threatened_planet
-| Sequence: Profitable Expansion
-| | Check: profitable_neutral_exists
-| | Action: expand_to_best_neutral
 | Sequence: Safe Enemy Attack
 | | Check: safe_enemy_attack_exists
 | | Action: attack_best_enemy
+| Sequence: Profitable Expansion
+| | Check: profitable_neutral_exists
+| | Action: expand_to_best_neutral
 | Action: pass_turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Success
-DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:1 12 13
-DEBUG:root:Result: Action: expand_to_best_neutral -> Success
-DEBUG:root:Result: Sequence: Profitable Expansion -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Success
-DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:1 11 13
-DEBUG:root:Result: Action: expand_to_best_neutral -> Success
-DEBUG:root:Result: Sequence: Profitable Expansion -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Success
-DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:1 18 5
-DEBUG:root:Result: Action: expand_to_best_neutral -> Success
-DEBUG:root:Result: Sequence: Profitable Expansion -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Success
-DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:1 17 5
-DEBUG:root:Result: Action: expand_to_best_neutral -> Success
-DEBUG:root:Result: Sequence: Profitable Expansion -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Success
-DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:1 0 38
-DEBUG:root:Result: Action: expand_to_best_neutral -> Success
-DEBUG:root:Result: Sequence: Profitable Expansion -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Success
-DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:1 6 23
-DEBUG:root:Result: Action: expand_to_best_neutral -> Success
-DEBUG:root:Result: Sequence: Profitable Expansion -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Success
-DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:1 5 23
-DEBUG:root:Result: Action: expand_to_best_neutral -> Success
-DEBUG:root:Result: Sequence: Profitable Expansion -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 17 22
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 18 22
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 13 32
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 14 32
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Order:1 18 4
-DEBUG:root:Result: Action: defend_threatened_planet -> Success
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
 DEBUG:root:Executing:Sequence: Profitable Expansion
 DEBUG:root:Executing:Check: profitable_neutral_exists
 DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
 DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 5 33
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Success
+DEBUG:root:Executing:Action: expand_to_best_neutral
+DEBUG:root:Order:1 6 33
+DEBUG:root:Result: Action: expand_to_best_neutral -> Success
+DEBUG:root:Result: Sequence: Profitable Expansion -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
 DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:1 9 34
+DEBUG:root:Order:13 17 53
 DEBUG:root:Result: Action: attack_best_enemy -> Success
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Order:12 6 16
-DEBUG:root:Order:1 6 6
-DEBUG:root:Result: Action: defend_threatened_planet -> Success
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
 DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:11 17 47
+DEBUG:root:Order:1 5 28
 DEBUG:root:Result: Action: attack_best_enemy -> Success
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
 DEBUG:root:Executing:Sequence: Profitable Expansion
 DEBUG:root:Executing:Check: profitable_neutral_exists
 DEBUG:root:Result: Check: profitable_neutral_exists -> Success
 DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:1 19 56
+DEBUG:root:Order:1 15 51
 DEBUG:root:Result: Action: expand_to_best_neutral -> Success
 DEBUG:root:Result: Sequence: Profitable Expansion -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Order:11 5 15
-DEBUG:root:Result: Action: defend_threatened_planet -> Success
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Success
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:1 6 18
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:13 16 44
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:15 18 24
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
 DEBUG:root:Executing:Sequence: Profitable Expansion
 DEBUG:root:Executing:Check: profitable_neutral_exists
 DEBUG:root:Result: Check: profitable_neutral_exists -> Success
 DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:12 15 60
+DEBUG:root:Order:1 22 53
 DEBUG:root:Result: Action: expand_to_best_neutral -> Success
 DEBUG:root:Result: Sequence: Profitable Expansion -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:13 5 7
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Order:1 19 45
-DEBUG:root:Order:18 19 10
-DEBUG:root:Result: Action: defend_threatened_planet -> Success
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
 DEBUG:root:Executing:Sequence: Profitable Expansion
 DEBUG:root:Executing:Check: profitable_neutral_exists
 DEBUG:root:Result: Check: profitable_neutral_exists -> Success
 DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:0 20 56
+DEBUG:root:Order:17 21 53
 DEBUG:root:Result: Action: expand_to_best_neutral -> Success
 DEBUG:root:Result: Sequence: Profitable Expansion -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:15 12 18
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
 DEBUG:root:Executing:Sequence: Profitable Expansion
 DEBUG:root:Executing:Check: profitable_neutral_exists
 DEBUG:root:Result: Check: profitable_neutral_exists -> Success
 DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:11 16 60
+DEBUG:root:Order:13 11 54
 DEBUG:root:Result: Action: expand_to_best_neutral -> Success
 DEBUG:root:Result: Sequence: Profitable Expansion -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
-DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:0 17 16
-DEBUG:root:Result: Action: attack_best_enemy -> Success
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:15 14 35
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:17 19 26
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:16 3 46
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
 DEBUG:root:Executing:Sequence: Profitable Expansion
 DEBUG:root:Executing:Check: profitable_neutral_exists
 DEBUG:root:Result: Check: profitable_neutral_exists -> Success
 DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:12 22 59
+DEBUG:root:Order:1 20 67
 DEBUG:root:Result: Action: expand_to_best_neutral -> Success
 DEBUG:root:Result: Sequence: Profitable Expansion -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:18 9 41
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:13 11 42
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:21 8 23
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
 DEBUG:root:Executing:Sequence: Profitable Expansion
 DEBUG:root:Executing:Check: profitable_neutral_exists
 DEBUG:root:Result: Check: profitable_neutral_exists -> Success
 DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:19 21 59
+DEBUG:root:Order:17 7 72
 DEBUG:root:Result: Action: expand_to_best_neutral -> Success
 DEBUG:root:Result: Sequence: Profitable Expansion -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
 DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:11 9 18
+DEBUG:root:Order:13 5 7
 DEBUG:root:Result: Action: attack_best_enemy -> Success
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:15 2 60
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:16 10 53
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:14 6 7
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:1 22 68
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
 DEBUG:root:Executing:Sequence: Profitable Expansion
 DEBUG:root:Executing:Check: profitable_neutral_exists
 DEBUG:root:Result: Check: profitable_neutral_exists -> Success
 DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:18 13 60
+DEBUG:root:Order:18 4 80
 DEBUG:root:Result: Action: expand_to_best_neutral -> Success
 DEBUG:root:Result: Sequence: Profitable Expansion -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:17 21 50
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:8 19 6
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:15 12 20
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:15 14 45
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:7 20 43
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:13 11 6
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:20 7 8
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:13 5 7
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
+DEBUG:root:Executing:Action: attack_best_enemy
+DEBUG:root:Order:14 6 7
+DEBUG:root:Result: Action: attack_best_enemy -> Success
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
 DEBUG:root:Executing:Sequence: Profitable Expansion
 DEBUG:root:Executing:Check: profitable_neutral_exists
 DEBUG:root:Result: Check: profitable_neutral_exists -> Success
 DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:1 14 60
+DEBUG:root:Order:16 0 132
 DEBUG:root:Result: Action: expand_to_best_neutral -> Success
 DEBUG:root:Result: Sequence: Profitable Expansion -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
 DEBUG:root:Executing:Sequence: Profitable Expansion
 DEBUG:root:Executing:Check: profitable_neutral_exists
 DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
 DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Safe Enemy Attack
+DEBUG:root:Executing:Check: safe_enemy_attack_exists
+DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
+DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
+DEBUG:root:Executing:Sequence: Profitable Expansion
+DEBUG:root:Executing:Check: profitable_neutral_exists
+DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
+DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
+DEBUG:root:Executing:Action: pass_turn
+DEBUG:root:Result: Action: pass_turn -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
 DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:12 19 38
+DEBUG:root:Order:8 19 6
 DEBUG:root:Result: Action: attack_best_enemy -> Success
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
 DEBUG:root:Executing:Sequence: Safe Enemy Attack
 DEBUG:root:Executing:Check: safe_enemy_attack_exists
 DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
 DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
 DEBUG:root:Executing:Sequence: Profitable Expansion
 DEBUG:root:Executing:Check: profitable_neutral_exists
 DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
 DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
-DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:0 17 16
-DEBUG:root:Result: Action: attack_best_enemy -> Success
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
-DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:0 18 16
-DEBUG:root:Result: Action: attack_best_enemy -> Success
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Order:15 22 31
-DEBUG:root:Result: Action: defend_threatened_planet -> Success
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Order:16 13 15
-DEBUG:root:Result: Action: defend_threatened_planet -> Success
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
-DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:22 20 9
-DEBUG:root:Result: Action: attack_best_enemy -> Success
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Success
-DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:11 3 82
-DEBUG:root:Result: Action: expand_to_best_neutral -> Success
-DEBUG:root:Result: Sequence: Profitable Expansion -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
-DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:16 5 15
-DEBUG:root:Result: Action: attack_best_enemy -> Success
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Order:22 17 13
-DEBUG:root:Result: Action: defend_threatened_planet -> Success
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Success
-DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:1 4 82
-DEBUG:root:Result: Action: expand_to_best_neutral -> Success
-DEBUG:root:Result: Sequence: Profitable Expansion -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
-DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:22 9 11
-DEBUG:root:Result: Action: attack_best_enemy -> Success
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Success
-DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:12 7 84
-DEBUG:root:Result: Action: expand_to_best_neutral -> Success
-DEBUG:root:Result: Sequence: Profitable Expansion -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
-DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:15 22 28
-DEBUG:root:Result: Action: attack_best_enemy -> Success
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Order:16 5 11
-DEBUG:root:Result: Action: defend_threatened_planet -> Success
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
-DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:0 3 23
-DEBUG:root:Result: Action: attack_best_enemy -> Success
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Order:20 9 6
-DEBUG:root:Result: Action: defend_threatened_planet -> Success
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Success
-DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:11 8 84
-DEBUG:root:Result: Action: expand_to_best_neutral -> Success
-DEBUG:root:Result: Sequence: Profitable Expansion -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
-DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:17 20 16
-DEBUG:root:Result: Action: attack_best_enemy -> Success
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Success
-DEBUG:root:Executing:Action: expand_to_best_neutral
-DEBUG:root:Order:1 10 85
-DEBUG:root:Result: Action: expand_to_best_neutral -> Success
-DEBUG:root:Result: Sequence: Profitable Expansion -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
-DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:0 2 63
-DEBUG:root:Result: Action: attack_best_enemy -> Success
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Order:22 20 9
-DEBUG:root:Result: Action: defend_threatened_planet -> Success
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
-DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:22 17 14
-DEBUG:root:Result: Action: attack_best_enemy -> Success
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
-DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:3 9 13
-DEBUG:root:Result: Action: attack_best_enemy -> Success
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Result: Action: defend_threatened_planet -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Order:22 17 13
-DEBUG:root:Result: Action: defend_threatened_planet -> Success
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Success
-DEBUG:root:Executing:Action: attack_best_enemy
-DEBUG:root:Order:2 8 23
-DEBUG:root:Result: Action: attack_best_enemy -> Success
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Success
-DEBUG:root:Executing:Action: defend_threatened_planet
-DEBUG:root:Order:2 9 12
-DEBUG:root:Result: Action: defend_threatened_planet -> Success
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
-DEBUG:root:Executing:Action: pass_turn
-DEBUG:root:Result: Action: pass_turn -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Defend Threatened Planet
-DEBUG:root:Executing:Check: threatened_planet_exists
-DEBUG:root:Result: Check: threatened_planet_exists -> Failure
-DEBUG:root:Result: Sequence: Defend Threatened Planet -> Failure
-DEBUG:root:Executing:Sequence: Profitable Expansion
-DEBUG:root:Executing:Check: profitable_neutral_exists
-DEBUG:root:Result: Check: profitable_neutral_exists -> Failure
-DEBUG:root:Result: Sequence: Profitable Expansion -> Failure
-DEBUG:root:Executing:Sequence: Safe Enemy Attack
-DEBUG:root:Executing:Check: safe_enemy_attack_exists
-DEBUG:root:Result: Check: safe_enemy_attack_exists -> Failure
-DEBUG:root:Result: Sequence: Safe Enemy Attack -> Failure
 DEBUG:root:Executing:Action: pass_turn
 DEBUG:root:Result: Action: pass_turn -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success

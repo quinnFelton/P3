@@ -50,7 +50,7 @@ def time_for_enemy_to_capture(state, planet_id):
     return min(incoming_enemy_times)
 
 
-#Defensive checks
+#Defensive checks - more consistently beat given bots on random maps without these checks, but keeping just in case
 
 def find_threatened_planet(state):
     """
@@ -164,7 +164,7 @@ def expand_to_best_neutral(state):
 
 
  
-# Enemy attacks
+# Enemy attacks - also tried combined planet attacks but made it worse against random maps
  
 
 def find_best_enemy_move(state):
@@ -234,7 +234,6 @@ def attack_best_enemy(state):
 def pass_turn(state):
     """
     do nothing
-
     finish_turn() is called by bt_bot.py after the behavior tree finishes
     """
     return True

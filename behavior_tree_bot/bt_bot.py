@@ -45,9 +45,9 @@ def setup_behavior_tree():
     ]
 
     root.child_nodes = [
-        defend,
-        expansion,
+        #defend, #was less reliable on random maps with defense implemented, so removed from final version of bot
         safe_attack,
+        expansion,
         Action(pass_turn),
     ]
 

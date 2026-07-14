@@ -4,7 +4,7 @@ from behavior_tree_bot.behaviors import (
     find_best_enemy_move,
 )
 
-def threatened_planet_exists(state):
+def threatened_planet_exists(state): #not used in the final version of the bot, but keeping just in case
     return find_threatened_planet(state) is not None
 
 def profitable_neutral_exists(state):
